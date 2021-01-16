@@ -1,25 +1,39 @@
-<div class="fixed-header">
-  <div class="container">
-    <div class="logo">
-       <img src="assets/images/transparentMlm.png" alt="MANALOCALMALL">
-       <h4 class="productTitle">MANALOCALMALL</h4>
-    </div>
-  
-  </div>
+<div class="">
+    <!-- Image and text -->
+<nav class="navbar navbar-warning bg-warning">
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/transparentMlm.png" width="50" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+   <span class="text-info">Manalocalmall</span> 
+  </a>
+</nav>
 </div>
-<div class="container">
-  <div class="main-section row">
-    <div class="luckdraw-section col">
-      <h4 class="">Luckydraw contest</h4>
-      <div class="customerCard" *ngFor="let customer of customersArray">
-        <p >Customer Id: {{customer.customerId}}</p>
-        <p >Participated in festival super sale: {{customer.superSale}}</p>
+<div class="container text-center main-section">
+  <h2 class="text-primary">Luckydraw contest for festival super sale</h2>
+  <h4 class="text-danger">Winner will announce at 07.05 PM tommorow</h4>
+  <div class="row">
+    
+    <div class=" col-12">
+      <div class="card text-center">
+        <div class="card-img-top">
+             <app-analog-time></app-analog-time>
+        </div>
+        <div class="card-body">
+          <carousel >
+            <slide *ngFor="let customer of customersArray; let index=index">
+             <div class="card" [ngClass]="{'bg-warning': customer.superSale == 'Yes', 'bg-primary': customer.superSale == 'No'}">
+               <div class="card-body">
+                <p class="text-light">Customer Id: {{customer.customerId}}</p>
+               </div>
+              
+             </div>
+              <!-- <div class="carousel-caption">
+                <h4>Slide {{index}}</h4>
+              </div> -->
+            </slide>
+          </carousel>
+        </div>
       </div>
     </div>
-    <div class="time-section col">
-      <app-analog-time></app-analog-time>
-    </div>
-   
   </div>
  
   

@@ -33,71 +33,16 @@ nav a{
 }
 
 .main-section{
-    margin-top: 105px;
+    margin-top: 30px;
     text-align: center;
-    width:100%;
-    height: 500px;
-    border: 1px solid #d4d4d4;
-    border-radius: 40px;
-    .luckdraw-section{
-        float: left;
-        margin: 0 auto;
-        text-align: justify;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines;
-    width:100%;
-    height: 425px;
-    overflow-y: auto;
-        h4{
-            font-size: 18px;
-        }
-        .customerCard{
-            width: 200px;
-    height: 130px;
-    text-align: center;
-    border-radius: 40px;
-    color: #0000FF;
-    background-color: #EBB900;
-    vertical-align: top;
-    margin-left: 15px;
-    margin-top: 20px;
-    display: inline-block;
-    zoom: 1;
-        }
-    }
-    .time-section{
-        float: right;
-        margin-right:0px;
-    }
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
-
-
-.companyNametbis{
-    font-weight: bold;
-    font-size: medium;
-    cursor: pointer;
-    font-style: oblique;
-    color:#138496;
+:host ::ng-deep .carousel-control-next-icon{
+    display: none !important;
 }
-.productTitle{
-    position: relative;
-    top: 18px;
-    left: 10px;
-    font-size: 20px;
-    color:#fff;
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    font-style: oblique;
+:host ::ng-deep .carousel-control-prev-icon{
+    display: none !important;
 }
-.row {
-    display: flex; /* equal height of the children */
-  }
-  
-  .col {
-    flex: 1; /* additionally, equal width */
-    
-    padding: 1em;
-  }
-

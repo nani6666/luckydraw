@@ -1,12 +1,21 @@
 import { Component } from '@angular/core';
+import { CarouselConfig } from 'ngx-bootstrap/carousel';
+import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [
+    { provide: CarouselConfig, useValue: { interval: 500, noPause: true, showIndicators: false } }
+  ]
 })
 export class AppComponent {
-  title = 'luckydraw';
+  itemsPerSlide = 1;
+  subscription: Subscription;
+  intervalId: any;
+
+  singleSlideOffset = true;
    customersArray = [
     {
       "customerId": "MLM00001",
@@ -1181,7 +1190,18 @@ export class AppComponent {
       "superSale": "No"
     }
   ];
+  
   goToLink(url: string){
     window.open(url, "_blank");
+} 
+ngOnInit() {
+  //this.sheduledmethod();
 }
+// sheduledmethod(){
+//   time 
+//    this.intervalId = setInterval(this.luckyWinner(), 10000);
+// }
+// luckyWinner(param){
+
+// }
 }
