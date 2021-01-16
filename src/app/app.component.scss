@@ -34,6 +34,11 @@ nav a{
 
 .main-section{
     margin-top: 105px;
+    text-align: center;
+    width:100%;
+    height: 500px;
+    border: 1px solid #d4d4d4;
+    border-radius: 40px;
     .luckdraw-section{
         float: left;
         margin: 0 auto;
@@ -41,6 +46,8 @@ nav a{
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
     width:100%;
+    height: 425px;
+    overflow-y: auto;
         h4{
             font-size: 18px;
         }
