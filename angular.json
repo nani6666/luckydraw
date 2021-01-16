@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "luckydraw"
+    }
+  },
+  "defaultProject": "luckydraw",
+  "cli": {
+    "analytics": "8b63d1cd-be54-49e9-bb4c-69293220c838"
+  }
 }

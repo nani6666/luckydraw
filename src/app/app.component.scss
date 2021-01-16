@@ -1,0 +1,96 @@
+.container{
+    width: 80%;
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #f79e31;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+    
+    .logo{
+        
+        img{
+            float: left;
+            width: 65px;
+            height: 65px;
+        }
+      
+    }
+}
+.fixed-footer{
+    bottom: 0;
+}    
+/* Some more styles to beutify this example */
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+
+.main-section{
+    margin-top: 105px;
+    .luckdraw-section{
+        float: left;
+        margin: 0 auto;
+        text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    width:100%;
+        h4{
+            font-size: 18px;
+        }
+        .customerCard{
+            width: 200px;
+    height: 130px;
+    text-align: center;
+    border-radius: 40px;
+    color: #0000FF;
+    background-color: #EBB900;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    zoom: 1;
+        }
+    }
+    .time-section{
+        float: right;
+        margin-right:0px;
+    }
+}
+
+
+.companyNametbis{
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    font-style: oblique;
+    color:#138496;
+}
+.productTitle{
+    position: relative;
+    top: 18px;
+    left: 10px;
+    font-size: 20px;
+    color:#fff;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: oblique;
+}
+.row {
+    display: flex; /* equal height of the children */
+  }
+  
+  .col {
+    flex: 1; /* additionally, equal width */
+    
+    padding: 1em;
+  }
+
